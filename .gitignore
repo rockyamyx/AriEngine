@@ -31,6 +31,7 @@
 *.out
 *.app
 /.vs
+/AriEngine/AriEngine.sln
 /AriEngine/AriEngine.vcxproj
 /AriEngine/AriEngine.vcxproj.filters
 /AriEngine/AriEngine.vcxproj.user
