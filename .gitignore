@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+/.vs
+/AriEngine/AriEngine.vcxproj
+/AriEngine/AriEngine.vcxproj.filters
+/AriEngine/AriEngine.vcxproj.user
