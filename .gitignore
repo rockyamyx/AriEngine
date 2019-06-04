@@ -35,9 +35,9 @@
 /AriEngine/AriEngine.vcxproj
 /AriEngine/AriEngine.vcxproj.filters
 /AriEngine/AriEngine.vcxproj.user
-/AriEngine/Sandbox.vcxproj*
-/AriEngine/Sandbox.vcxproj.filters
-/AriEngine/Sandbox.vcxproj.user
 /bin-int/Debug-windows-x86_64
-*.user
 /bin/Debug-windows-x86_64
+*.vcxproj
+*.sln
+*.filters
+*.user
