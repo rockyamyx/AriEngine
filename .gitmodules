@@ -1,0 +1,3 @@
+[submodule "AriEngine/vendor/GLFW"]
+	path = AriEngine/vendor/GLFW
+	url = https://github.com/TheCherno/glfw
