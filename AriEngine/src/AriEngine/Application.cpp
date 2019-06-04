@@ -1,8 +1,13 @@
 #include "aepch.h"
 #include "Application.h"
 
-#include "AriEngine\Events\ApplicationEvent.h"
-#include "Log.h"
+
+#include "AriEngine/Events/ApplicationEvent.h"
+#include "AriEngine/Log.h"
+
+#include "GLFW/glfw3.h"
+
+
 
 namespace AriEngine
 {
@@ -10,6 +15,7 @@ namespace AriEngine
 
 	Application::Application()
 	{
+		m_Window = std::unique_ptr<Window>(Window::Create());
 	}
 
 
@@ -19,10 +25,10 @@ namespace AriEngine
 
 	void Application::Run()
 	{
-		WindowResizeEvent e(1280, 720);
-		AE_TRACE(e);
-
-		while (true);
+		while (m_Running)
+		{
+			m_Window->OnUpdate();
+		}
 	}
 
 }

@@ -13,6 +13,7 @@
 #include <unordered_set>
 #include <string>
 
+#include "AriEngine/Log.h"
 
 #ifdef AE_PLATFORM_WINDOWS
 	#include <Windows.h>

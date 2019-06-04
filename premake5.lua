@@ -17,7 +17,10 @@ workspace "AriEngine"
 	outputdir =  "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
 
-	includeDir = {}
+	IncludeDir = {}
+	IncludeDir["GLFW"] = "AriEngine/vendor/GLFW/include"
+
+	include "AriEngine/vendor/GLFW/"
 
 	group "Dependencies"
 
@@ -50,12 +53,14 @@ workspace "AriEngine"
 		includedirs
 		{
 			"%{prj.name}/src",
-			"%{prj.name}/vendor/spdlog/include"
+			"%{prj.name}/vendor/spdlog/include",
+			"%{IncludeDir.GLFW}"
 		}
 
 		links
 		{
-		
+			"GLFW",
+			"opengl32.lib"
 		}
 
 		postbuildcommands {
