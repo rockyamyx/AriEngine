@@ -40,3 +40,4 @@
 /AriEngine/Sandbox.vcxproj.user
 /bin-int/Debug-windows-x86_64
 *.user
+/bin/Debug-windows-x86_64

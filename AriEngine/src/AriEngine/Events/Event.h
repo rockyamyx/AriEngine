@@ -2,10 +2,6 @@
 
 #include "AriEngine/Core.h"
 
-#include <string>
-#include <functional>
-#include <sstream>
-
 namespace AriEngine
 {
 	enum class EventType

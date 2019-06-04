@@ -33,6 +33,9 @@ workspace "AriEngine"
 		targetdir ("bin/" .. outputdir .. "/%{prj.name}" )
 		objdir ("bin-int/" .. outputdir .. "/%{prj.name}" )
 
+		pchheader "aepch.h"
+		pchsource "AriEngine/src/aepch.cpp"
+
 		files
 		{
 			"%{prj.name}/src/**.h",
