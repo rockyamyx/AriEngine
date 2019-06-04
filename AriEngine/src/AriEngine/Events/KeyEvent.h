@@ -20,10 +20,10 @@ namespace AriEngine
 		int m_KeyCode;
 	};
 
-	class ARI_API KeyPressEvent : public KeyEvent
+	class ARI_API KeyPressedEvent : public KeyEvent
 	{
 	public:
-		KeyPressEvent(int keycode, int repeatCount)
+		KeyPressedEvent(int keycode, int repeatCount)
 			: KeyEvent(keycode), m_RepeatCount(repeatCount) {}
 		inline int GetRepeatCount() const { return m_RepeatCount; }
 
@@ -54,5 +54,21 @@ namespace AriEngine
 		}
 
 		EVENT_CLASS_TYPE(KeyReleased)
+	};
+
+	class ARI_API KeyTypedEvent : public KeyEvent
+	{
+	public:
+		KeyTypedEvent(int keycode)
+			: KeyEvent(keycode) {}
+
+		std::string ToString() const override
+		{
+			std::stringstream ss;
+			ss << "KeyTypedEvent: " << m_KeyCode;
+			return ss.str();
+		}
+
+		EVENT_CLASS_TYPE(KeyTyped)
 	};
 }

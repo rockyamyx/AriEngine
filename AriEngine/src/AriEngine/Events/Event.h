@@ -21,6 +21,7 @@ namespace AriEngine
 		//KeyEvents
 		KeyPressed,
 		KeyReleased,
+		KeyTyped,
 		//MouseEvents
 		MouseButtonPressed,
 		MouseButtonReleased,
