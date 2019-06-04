@@ -1,0 +1,6 @@
+[submodule "AriEngine/vendor/GLFW"]
+	path = AriEngine/vendor/GLFW
+	url = https://github.com/TheCherno/glfw
+[submodule "AriEngine/vendor/spdlog"]
+	path = AriEngine/vendor/spdlog
+	url = https://github.com/gabime/spdlog
